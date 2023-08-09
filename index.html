@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podpah's bookmarklet</title>
+    <style>
+        body{
+            background: dimgray;
+            font-size:xx-large;
+            color: black;
+        }
+        a {
+            border: 0.2rem solid crimson;
+            padding: 0.5rem;
+            display: inline-block;
+            color:crimson;
+        }
+        p {
+            font-size:medium;
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:(function(){ var scriptTags = document.querySelectorAll('script[type=&quot;application/ld+json&quot;]'); if (scriptTags.length > 0) { var jsonData = JSON.parse(scriptTags[0].textContent); if (jsonData[0].video && jsonData[0].video[0].contentUrl) { var contentUrl = jsonData[0].video[0].contentUrl; var openVideo = document.createElement('a'); openVideo.href = contentUrl; openVideo.download = ''; document.body.appendChild(openVideo); openVideo.click(); } else { console.log('Video URL not found.'); } } else if (window.location.href.substring(8, 16) == 'scontent') { var link = document.createElement('a'); link.href = window.location.href; link.download = ''; document.body.appendChild(link); link.click(); history.back(); } else { console.log('Script tag not found.'); } })();">Reel D</a>
+    <p>Drag the above to your bookmark bar to save the bookmarklet.</p>
+</body>
+</html>
