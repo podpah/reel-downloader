@@ -2,7 +2,7 @@
 Reel Downloader is a simple bookmarklet that allows you to easily save your instagram reels. I built it because I tried a few extensions and they didn't work so here we are.
 
 You can get it by dragging and dropping this on your bookmarks: <br>
-<a href="javascript:(function(){ var scriptTags = document.querySelectorAll('script[type=&quot;application/ld+json&quot;]'); if (scriptTags.length > 0) { var jsonData = JSON.parse(scriptTags[0].textContent); if (jsonData[0].video && jsonData[0].video[0].contentUrl) { var contentUrl = jsonData[0].video[0].contentUrl; var openVideo = document.createElement('a'); openVideo.href = contentUrl; openVideo.download = ''; document.body.appendChild(openVideo); openVideo.click(); } else { console.log('Video URL not found.'); } } else if (window.location.href.substring(8, 16) == 'scontent') { var link = document.createElement('a'); link.href = window.location.href; link.download = ''; document.body.appendChild(link); link.click(); history.back(); } else { console.log('Script tag not found.'); } })();" style="color:crimson;">Reel D</a><br>
+[Click here](https://podpah.github.io/reel-downloader/) - Github doesn't support a tags in markdown unfortunately so this takes you to the tag  <br>
 You can also copy and paste [bookmarklet](bookmarklet.js) into a bookmark's URL if this doesn't work for you
 
 # Usage
