@@ -6,5 +6,6 @@ You can get it by dragging and dropping this on your bookmarks: <br>
 You can also copy and paste [bookmarklet](bookmarklet.js) into a bookmark's URL if this doesn't work for you
 
 # Usage
-You just click the bookmark once to run it. It'll turn the tab into the video source, then when you click the bookmark again, it'll generate the download prompt for your browser and bring you back to the reel tab. <br>
-(I couldn't figure out how to have it open a new tab with the video, download it then close the tab with just one bookmarklet so that's how it is. If I manage to figure it out, I'll update it. Otherwise if you have any ideas for making this possible, please do let me know or create a PR)
+You just click the bookmark once to run it. It'll create a new tab on the video file. <br>
+> [!WARNING]  
+> Instagram changes how reels are rendered often so this might break
