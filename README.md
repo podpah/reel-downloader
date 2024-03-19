@@ -1,5 +1,5 @@
 # Reel Downloader
-Reel Downloader is a simple bookmarklet that allows you to easily save your instagram reels. I built it because I tried a few extensions and they didn't work so here we are.
+Reel Downloader is a simple bookmarklet that allows you to easily save your instagram reels. I built it because I tried a few extensions and they didn't work so here we are. (it also **as of last push** works with image posts but no guarantees)
 
 You can get it by dragging and dropping this on your bookmarks: <br>
 [Click here](https://podpah.github.io/reel-downloader/) - Github doesn't support a tags in markdown unfortunately so this takes you to the tag  <br>

@@ -1,7 +1,1 @@
-javascript: (function () {
-	try {
-		window.open(document.querySelector("video").src);
-	} catch (error) {
-		console.error("No video tag");
-	}
-})();
+javascript:(function(){try{window.open(document.querySelector("video").src);}catch(error){try{window.open(document.getElementsByTagName('img')[2].src);}catch(error){console.log('No img/video');}}})();

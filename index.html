@@ -43,7 +43,7 @@
 </head>
 <body>
     <div>
-        <a href="javascript:(function(){try {window.open(document.querySelector('video').src);}catch (error) {console.error('No video tag');}})();">Reel Downloader</a>
+        <a href="javascript:(function(){try{window.open(document.querySelector("video").src);}catch(error){try{window.open(document.getElementsByTagName('img')[2].src);}catch(error){console.log('No img/video');}}})();">Reel Downloader</a>
         <p>Drag the above button to your bookmarks bar to save the bookmarklet.</p>
         <p>Note: Instagram changes how the reels are displayed often, so this might stop working.</p>
     </div>
